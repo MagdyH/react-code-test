@@ -1,13 +1,160 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.header {
+  background-color: #f1f1f1;
+  text-align: center;
+  height: 35px;
+  border-bottom: 2px solid #e2e2e2;
+}
+
+img {
+  border-radius: 50%;
+  margin: auto 20px auto 0px;
+}
+
+.card {
+  display: flex;
+  padding: 20px;
+  border-bottom: 2px solid #e2e2e2;
+  margin: auto 0px auto 20px;
+}
+
+.user_name {
+  margin: auto auto auto 20px;
+}
+
+.cenetr-circle {
+  width: 20px;
+  height: 20px;
+  background: #7fb900;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  margin: auto;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background: #d0e5a3;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  margin: auto;
+  animation-name: loader;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  visibility: hidden;
+}
+
+.wide-circle {
+  width: 70px;
+  height: 70px;
+  background: #e5f1cc;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  margin: auto;
+  animation-name: wide-loader;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  visibility: hidden;
+}
+
+@keyframes loader {
+  0% {
+    width: 50px;
+    height: 50px;
+    background: #d0e5a3;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    margin: auto;
+    visibility: visible;
+  }
+  50% {
+    width: 70px;
+    height: 70px;
+    background: #e5f1cc;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    margin: auto;
+  }
+  100% {
+    width: 90px;
+    height: 90px;
+    background: hsl(80, 67%, 90%);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    margin: auto;
+  }
+}
+
+@keyframes wide-loader {
+  0% {
+    width: 70px;
+    height: 70px;
+    background: #e5f1cc;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    margin: auto;
+    visibility: visible;
+  }
+  100% {
+    width: 90px;
+    height: 90px;
+    background: hsl(80, 67%, 90%);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    margin: auto;
+  }
 }
