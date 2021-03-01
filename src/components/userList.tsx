@@ -1,4 +1,4 @@
-import React, { Dispatch, ReactElement, useCallback, useEffect, useState } from 'react';
+import React, { Dispatch, ReactElement, useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { getUsersFromApi } from '../redux/actions/userAction';
 import { User } from '../redux/types';
